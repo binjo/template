@@ -1,3 +1,7 @@
+2014-07-16  Binjo  <binjo.cn@gmail.com>
+
+	* correct autoload for macro definition of `template-initialize'.
+
 2003-08-21  Christoph Wedler  <wedler@users.sourceforge.net>
 
 	* template.el 3.1c.
@@ -99,7 +103,7 @@
 2002-03-01  Christoph Wedler  <wedler@users.sourceforge.net>
 
 	* template 3.1 is released.
-	
+
 	* template.el (template): Moved to SourceForge.net.
 
 2002-02-23  Christoph Wedler  <wedler@fmi.uni-passau.de>
@@ -121,7 +125,7 @@
 	(template-insert-time): New option argument DEFAULT.
 	(template-default-expansion-alist): New expansion (>>>TIME<<<).
 	Use `template-insert-time' for all date/time expansions.
-	
+
 	* template.el: XEmacs can now read template files with register
 	definitions using numbers, not characters.  Only define functions
 	starting with `template-'.  Only require cl for compilation.
@@ -215,7 +219,7 @@
 	(template-find-template): Prevent infloop in XEmacs.  Don't use t
 	as 4th arg of `insert-file-contents' if the narrowed part is
 	empty.
-	
+
 	* template.el: Miscellaneous improvements.
 	(template-new-file-0): With (>>>MARK<<<), push -not set- mark.
 	Reported by Stephan Helma <s.p.helma@gmx.net>.
@@ -590,7 +594,7 @@
 
 1998-11-03  Christoph Wedler  <wedler@fmi.uni-passau.de>
 
-	* template.el (template-expansion-alist): New predefined expansion 
+	* template.el (template-expansion-alist): New predefined expansion
 	form (>>>V<<<) for UTC date/time like RCS's $Date$.
 	(template-date-format): Defaults to "%d %b %Y".
 

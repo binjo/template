@@ -1155,7 +1155,7 @@ line on."
     (when (cdr syntax)
       (goto-char orig)
       (error "Command only works with comments terminated by end-of-line"))
-    
+
     (if (and (eq last-command 'template-block-comment-success)
 	     (looking-at "[ \t]*$"))
 	(template-insert-newline "" nil (1- (template-point-at-bol)))
@@ -2502,7 +2502,7 @@ For ARG, see `template-define-start'."
     (if (string= comment "")
 	(template-define-start arg "(%S %S)" register contents)
       (template-define-start arg "(%S %S %S)" register contents comment))))
-  
+
 
 ;;;===========================================================================
 ;;;  Initialization
@@ -2537,7 +2537,7 @@ See `easy-menu-define' for the format of MENU."
 	     (setq path nil)))
 	 (when path (add-submenu path menu)))))
 
-;;;###autoload
+;;;###autoload (autoload 'template-initialize "template")
 (defunx template-initialize (&rest dummies)
   ;; checkdoc-params: (dummies)
   "Initialized package template.  See variable `template-initialize'."
